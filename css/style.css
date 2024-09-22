@@ -1,0 +1,415 @@
+body{
+	margin: 0;
+	font-family: arial, sans-serif;
+}
+
+button{
+	background-color: #212529;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.destination_grid{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.destination_card{
+	margin-top: 20px;
+	background-color: #fff;
+	border: 2px solid #212529;
+	border-radius: 4px;
+	padding: 10px;
+	width: auto;
+}
+
+.destination_card h3{
+	font-size: 18px;
+	color: #00aaff;
+	margin-top: 0;
+	font-weight: 600;
+}
+
+.destination_card p{
+	font-size: 15.5px;
+	color: #657279;
+	margin: 0;
+	margin-bottom: 1rem;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 80px;
+	gap: 20px;
+}
+
+.card{
+	background-color: white;
+	border: 1px solid #201f1f;
+	border-radius: 4px;
+	overflow: hidden;
+	width: 30%;
+}
+
+.card img{
+	width: 100%;
+	height: 150px;
+	object-fit: cover;	
+}
+
+.card-info{
+	padding: 15px;
+}
+
+.card-info h2{
+	margin: 10px 0;
+	font-size: 18px;
+	color: #00aaff;
+	padding-right: 20px;
+	text-align: left;
+}
+
+
+.card-info p{
+	font-size: 14px;
+	color: #555;
+	text-align: left;
+}
+
+.container-card{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.card-obj{
+	position: relative;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.card-obj img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+}
+
+.overlay h3{
+	margin: 0;
+	font-size: 24px;
+}
+
+.overlay p{
+	margin: 5px 0 0;
+	font-size: 16px;
+}
+
+.app-promo-section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	padding: 30px;
+	text-align: left;
+	gap: 50px;
+}
+
+.app-promo-text{
+	flex: 1;
+	padding-right: 20px;
+	width: 100%;
+}
+
+.app-promo-text h2{
+	font-size: 50px;
+	margin-bottom: 10px;
+	color: #212529;
+}
+
+.app-promo-text h3{
+	font-size: 28px;
+	margin-bottom: 20px;
+	color: #4f4f4f;
+}
+
+.app-promo-text p{
+	font-size: 15px;
+	margin-bottom: 20px;
+	color: #4f4f4f;
+}
+
+.download-link img{
+	width: 150px;
+}
+
+.app-promo-image{
+	flex: 1;
+}
+
+.app-promo-image img{
+	max-width: 100%;
+	height: auto;
+}
+
+.newsletter-section{
+	background-color: #084482;
+	margin: 0;
+	width: 100vw;
+	margin-left: calc(-50vw + 50%);
+	margin-right: calc(-50vw + 50%);
+	padding: 16px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	margin-top: -52px;
+	box-sizing: border-box;
+}
+
+
+@media(min-width: 768px){
+	.news-input{
+		width: 50%;
+	}
+}
+
+.unlock-button{
+	padding: 10px 20px;
+	margin-left: -10px;
+	background-color: #212529;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.unlock-text{
+	flex: 2;
+	text-align: center;
+}
+
+.newsletter-form{
+	flex: 2;
+	justify-content: center;
+	margin-left: -450px;
+	display: flex;
+}
+
+.unlock-text h3{
+	font-size: 18px;
+	color: #fff;
+}
+
+.unlock-text p{
+	font-size: 16px;
+	color: #00aeff;
+}
+
+
+
+.hero{
+	background: url(../img/v7-homepage1.jpg) no-repeat center center/cover;
+	color: white;
+}
+
+.bg-hero {
+	text-align: center;
+	padding: 50px 20px;
+	background: rgba(0, 0, 0, 0.5)
+}
+
+.hotel-hero{
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1{
+	font-size: 36px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+.hero p{
+	font-size: 18px;
+	margin-top: -50px;
+}
+
+
+
+.suggested, .top, .title, .featured-in, .city, .special, .add-hotel{
+	text-align: center;
+	padding: 40px 20px;
+	background-color: #fff;
+	font-size: 24px;
+	margin: 0 auto;
+	margin-top: 4px;
+}
+
+.suggested h3, .top h3, .title h3, .city h3, .special h3, .add-hotel h3, .featured-in h3{
+	margin: 0;
+	margin-bottom: 5px;
+	color: #4f4f4f;
+	font-weight: 700;
+}
+
+
+.suggested p, .top p, .title p, .city p, .special p, .add-hotel p{
+	margin: 0;
+	font-size: 18px;
+	color: #4f4f4f;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+
+.search-container{
+	display: flex;
+	justify-content: center;
+	padding: 40px 55px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+	margin: -40px auto 0;
+    width: 70%;
+    grid-gap: 5px;
+}
+
+.tiny-divider{
+	border-top: 3px solid #212529;
+    margin: 15px auto;
+    width: 4rem;
+}
+
+.logos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 90px;
+	margin-top: 60px;
+}
+
+.logos img{
+	max-height: 50px;
+	opacity: 0.7;
+}
+
+.logos img:hover{
+	opacity: 1;
+}
+
+.email-input{
+	border-width: 1px;
+	height: 50px;
+    border-style: solid;
+    border-color: rgb(189, 189, 189);
+    border-image: initial;
+    outline: #00aeff;
+	margin-top: 20px;
+}
+
+.search-input, .date-input{
+	padding: 10px;
+	margin-right: 10px;
+	border: 1px solid #ccc;
+	flex: 1;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.search-input:focus, .date-input:focus{
+	border-color: black;
+	outline: none;
+}
+
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.flex-item{
+	width: 200px;
+	text-align: left;
+}
+
+.flex-item a{
+	color: #00aeff;
+	font-family: 14px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.footer{
+	font-size: 13px;
+}
+
+.footer, .footer-content{
+	display: flex;
+	text-align: left;
+	justify-content: left;
+}
+
+.footer, .footer-content div{
+	margin: 20px;
+	min-width: 150px;
+	color: #aca8a8;
+}
+
+.footer, .footer-content div a{
+	text-decoration: none;
+	color: #00aeff;
+	display: block;
+	margin: 5px 0;
+}
+
+.footer-content h4{
+	padding-top: 10px;
+	border-bottom: 1px #212529 solid;
+	color: #212529;
+}
+
+
+.footer-bottom{
+	display: flex;
+	margin-top: 10px;
+	text-align: center;
+	border-top: 1px #212529 solid;
+	margin-bottom: 20px;
+	color: #212529;
+}
+
+.footer-bottom p{
+	font: 12px;
+}
+
+.footer-bottom img{
+	margin: 0 5px;
+	vertical-align: middle;
+}
+
+.footer-last{
+	flex: 2;
+}
